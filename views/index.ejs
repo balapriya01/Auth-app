@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex justify-center align-center mt-44">
+    <div class="p-10">
+        <h1 class="text-3xl">Register User</h1>
+        <hr>
+      <form class="p-5" action="/register" method="POST">
+        <input
+          type="text"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-64 p-2.5 mt-4"
+          autocomplete="off"
+          placeholder="name"
+          name="name"
+        />
+        <input
+          type="email"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-64 p-2.5 mt-4"
+          autocomplete="off"
+          placeholder="email"
+          name="email"
+        />
+        <input
+          type="password"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-64 p-2.5 mt-4"
+          autocomplete="off"
+          placeholder="password"
+          name="password"
+        />
+        <input
+          class="p-2 bg-green-800 rounded-lg text-white mt-4 cursor-pointer w-64 mt-6"
+          type="submit"
+          value="Submit"
+        />
+      </form>
+      <a class="p-4 ml-20" href="/login">Already a user</a>
+    </div>
+  </body>
+</html>
